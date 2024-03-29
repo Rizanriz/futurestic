@@ -5,23 +5,23 @@
 }
 @font-face {
   font-family:fu;
-  src: url(./Sddystopiandemo-GO7xa.otf);
+  src: url(./font/Sddystopiandemo-GO7xa.otf);
 }
 @font-face {
   font-family: f;
-  src: url(./SuperchargeCondensed-jE5KO.otf);
+  src: url(./font/SuperchargeCondensed-jE5KO.otf);
 }
 @font-face {
   font-family: fut;
-  src: url(./FutureFriendsItalic-8MBgB.ttf);
+  src: url(./font/FutureFriendsItalic-8MBgB.ttf);
 }
 @font-face {
   font-family: futur;
-  src: url(./FutureLight-BW15w.ttf);
+  src: url(./font/FutureLight-BW15w.ttf);
 }
 @font-face {
   font-family:inter;
-  src: url(./InterBureauBoldItalic-3DOy.otf);
+  src: url(./font/InterBureauBoldItalic-3DOy.otf);
 }
 body{
   font-family: futur;
@@ -34,35 +34,31 @@ body{
   justify-content: space-between;
 }
 .nav-links{
-  padding-top: 30px;
-  width: 250px;
+  padding-top: 25px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   font-size: 20px;
   font-weight: 600;
+}
+.svg{
+  display: flex;
+  justify-content: flex-end;
 }
 .logo1{
   padding-left: 20px;
   font-size: 7px;
-  margin-top: 10px;
+  margin-top: 15px;
   font-weight: lighter;
   font-family:f;
+  display: flex;
 }
 .line-icon{
   margin-left: 3px;
 }
-.buy-game{
-  right: 85px;
-  position: absolute;
-  top: 27px;
-  font-size: 18px;
-}
-.buy-game:hover{
-  color: blue;
-  cursor: pointer;
-}
+
 .shape-icon{
   padding: 20px;
+  cursor: pointer;
 }
 .main-head{
   width: 100%;
@@ -82,25 +78,28 @@ body{
 }
 .hero-img{
   width: 100%;
-  height: 110vh;
+  height: 100%;
 }
 .hero-img img{
   width: 100%;
   height: 100%;
 }
 .box{
-  width:700px;
-  height: 300px;
+  width:100%;
+  min-height: 300px;
   display: flex;
   justify-content: space-evenly;
   padding: 10px;
+  flex-wrap: wrap;
 }
 .boxs{
   width: 200px;
-  height:250px ;
-  background-color: #3040D3;
+  height:260px ;
+  background-color: #3040d3;
   position: relative;
   overflow: hidden;
+  margin-bottom: 15px;
+  cursor: pointer;
 }
 .boxs::before{
   position: absolute;
@@ -109,11 +108,11 @@ body{
   content: "";
   width: 30%;
   height: 150%;
-  background-color: black;
+  background-color: #fff;
   transform: rotate(40deg);
 }
 .boxs:hover::before{
-  animation: animate 2s linear infinite;
+  animation: animate 2.5s linear infinite;
 }
 @keyframes animate {
   from{
@@ -129,36 +128,41 @@ body{
   inset: 5px;
   background-color: #fff;
 }
-.boxs h5,img{
+.boxs h5,img,button{
   z-index: 10;
   position: relative;
   padding: 10px;
   text-align: center;
   font-family: futur;
+  font-weight: 600;
 }
 .boxs img{
-  margin: 30px 0px 0px 50px;
+  margin: 40px 0px 0px 70px;
 }
+.boxs button{
+  margin-left: 130px;
+  border: none;
+  font-size: 30px;
+  background-color: transparent;
+  transition:.3s ease-in-out;
+}
+.boxs button:hover{
+  color: aqua;
+}
+
 .btn2{
   display: flex;
   justify-content: space-between;
   width: 360px;
   position: absolute;
-  top: 455px;
+  top: 470px;
   left: 70px;
 }
 .btn2 h3{
   font-size: 20px
 }
-.zero{
-  width: 100%;
-}
-.one{
-  width: 100%;
-}
-.three{
-  width: 100%;
-}
+
+
 .head2{
   width: 100%;
   height: 300px;
@@ -169,4 +173,7 @@ body{
 .head2 h1{
   font-size: 60px;
   line-height: 35px;
+}
+.head2 p{
+  font-size: 20px;
 }
